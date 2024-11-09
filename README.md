@@ -1,13 +1,10 @@
 
-> :warning: Some of you are asking for macOS 12 Monterey support. I have gotton it to work on my computer, but I do not have the time or motivation to add info about it. 
-> What I will say though is I got it to work using the iMac16,2 SMBIOS. I will keep updating OC versions though. Thank you.
-
 # Dell Optiplex 3020 Hackintosh OpenCore
 
 This repository contains a guide on how to install macOS on the Dell Optiplex 3020, with the necessary files, using OpenCore bootloader.
 
 This guide covers the following macOS versions:
-* macOS 11 Big Sur
+* macOS 15 Sequoia
 
 ## Disclaimer
 
@@ -21,7 +18,7 @@ The Dell Optiplex 3020 is a common and cheap business computer, based on the 4th
 
 Since I'm an active Hackintosh user on this machine, I will update the EFI periodically here as anything new is available.
 
-Currently, this EFI is based on OpenCore 0.7.4 and supports macOS Big Sur.
+Currently, this EFI is based on OpenCore 1.0.2 and supports Sequoia.
 
 
 ## About Big Sur
@@ -54,7 +51,7 @@ You should consider some hardware upgrades to this machine, to archive the best 
 
 By default, my machine came with an Intel i3-4150 CPU, which is fine, but not ideal for a Hackintosh machine. This may vary between machines, so check your configuration.
 
-The problem with the i3-4150 CPU is that it has Intel HD4400 graphics, which will work, but it will have some small issues, which I explain in this guide later. No Mac computer was shipped with this iGPU, so it is not surprising that it has issues. **Consider upgrading to a CPU, that has Intel HD4600 graphics instead**, LGA1150 Haswell CPUs are pretty cheap on the used market. Ideally, **I would install an i5-4590S,** since we're going to fake our machine like an iMac 15,1, and this machine was shipped with this exact CPU. **Keep in mind, the cooling solution included in the machine is rated to 65W in case of the 3020 MT and SFF, and 35W in case of the 3020M. Please check the TDP rating of your new CPU. Also, keep in mind the capabilities of the power supply.**
+The problem with the i3-4150 CPU is that it has Intel HD4400 graphics, which will work, but it will have some small issues, which I explain in this guide later. No Mac computer was shipped with this iGPU, so it is not surprising that it has issues. **Consider upgrading to a CPU, that has Intel HD4600 graphics instead**, LGA1150 Haswell CPUs are pretty cheap on the used market. Ideally, **I would install an i5-4460T,** since we're going to fake our machine like an iMac 15,1, and this machine was shipped with this exact CPU. **Keep in mind, the cooling solution included in the machine is rated to 65W in case of the 3020 MT and SFF, and 35W in case of the 3020M. Please check the TDP rating of your new CPU. Also, keep in mind the capabilities of the power supply.**
 
 #### RAM
 
